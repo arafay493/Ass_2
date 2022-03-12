@@ -1,0 +1,37 @@
+void main() {
+  num Maths = 82;
+  num Physics = 67;
+  num Chemistry = 78;
+  num Eng = 72;
+  num Urdu = 65;
+  
+  num totalMarks = 500;
+  num totalObtainedMarks = Maths + Physics + Chemistry + Eng + Urdu;
+  
+  num percentage = (totalObtainedMarks/totalMarks) * 100;
+  
+  if(percentage >= 80 && percentage <= 100){
+    print("Your percentage is ${percentage}\nYour Grade is A+");
+  }
+  else if(percentage >= 70 && percentage < 80){
+    print("Your percentage is ${percentage}\nYour Grade is A");
+  }
+  else if(percentage >= 60 && percentage < 70){
+    print("Your percentage is ${percentage}\nYour Grade is B");
+  }
+  else if(percentage >= 50 && percentage < 60){
+    print("Your percentage is ${percentage}\nYour Grade is C");
+  }
+  else if(percentage >= 40 && percentage < 50){
+    print("Your percentage is ${percentage}\nYour Grade is D");
+  }
+  else if(percentage >= 33 && percentage < 40){
+    print("Your percentage is ${percentage}\nYour Grade is E");
+  }
+  else if(percentage >= 0 && percentage < 33){
+    print("Your percentage is ${percentage}\nYour Grade is Fail");
+  }
+  else{
+    print("You Did not write the correct Percentage");
+  }
+}
